@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "KafkaMessage",
+  "description": "Schema for validating Kafka messages",
+  "type": "object",
+  "properties": {
+    "eventType": {
+      "type": "string",
+      "enum": ["PRODUCT_CREATED", "PRODUCT_UPDATED", "PRODUCT_UPDATED_PARTIAL", "PRODUCT_DELETED"]
+    },
+    "productId": {
+      "type": "number",
+      "minimum": 1
+    },
+    "productName": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "message": {
+      "type": "string",
+      "minLength": 10
+    }
+  },
+  "required": ["eventType", "productId", "productName", "message"],
+  "additionalProperties": false
+}
