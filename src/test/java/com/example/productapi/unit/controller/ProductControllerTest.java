@@ -1,4 +1,4 @@
-package com.example.productapi.controller;
+package com.example.productapi.unit.controller;
 
 import com.example.productapi.dto.ProductDto;
 import com.example.productapi.service.ProductService;

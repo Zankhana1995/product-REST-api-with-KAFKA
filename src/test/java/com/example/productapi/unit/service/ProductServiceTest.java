@@ -1,10 +1,11 @@
-package com.example.productapi.service;
+package com.example.productapi.unit.service;
 
 import com.example.productapi.dto.ProductDto;
 import com.example.productapi.exception.ResourceNotFoundException;
 import com.example.productapi.kafka.KafkaProducer;
 import com.example.productapi.model.Product;
 import com.example.productapi.repository.ProductRepository;
+import com.example.productapi.service.ProductServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
